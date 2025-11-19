@@ -4,7 +4,7 @@ import numpy as np
 
 st.title("Synthra Ai 📊 Advanced Excel Data Processor (Python + Pandas + NumPy)")
 whatsapp_number = "‪+201062350195‬"
-st.markdown(f"[  تواصل معنا على واتساب لتعلم كورس بايثون وتحليل البيانات ](https://wa.me/{whatsapp_number.replace('+','')})", unsafe_allow_html=True)
+st.write(f"[  تواصل معنا على واتساب لتعلم كورس بايثون وتحليل البيانات ](https://wa.me/{whatsapp_number.replace('+','')})", unsafe_allow_html=True)
 # ⿡ Upload Excel File
 uploaded_file = st.file_uploader("Upload your Excel file", type=["xlsx"])
 if uploaded_file:
@@ -256,3 +256,4 @@ elif operation == "Top/Bottom N Rows":
     else:
         st.dataframe(df.nsmallest(N,col))
  
+
