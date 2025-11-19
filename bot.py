@@ -257,7 +257,7 @@ elif operation == "Top/Bottom N Rows":
     else:
         st.dataframe(df.nsmallest(N,col))
 
-st.markdown(
+st.write(
     f"""
     <div style="background-color:#28a745; padding:12px; border-radius:10px; text-align:center;">
         <a href="{facebook_page}" style="color:white; font-size:20px; font-weight:bold;" target="_blank">
@@ -268,6 +268,7 @@ st.markdown(
     unsafe_allow_html=True
 )
  
+
 
 
 
