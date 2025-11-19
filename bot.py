@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-st.title("📊 Advanced Excel Data Processor (Python + Pandas + NumPy)")
+st.title("Synthra Ai \n📊 Advanced Excel Data Processor (Python + Pandas + NumPy)")
 
 # ⿡ Upload Excel File
 uploaded_file = st.file_uploader("Upload your Excel file", type=["xlsx"])
@@ -254,3 +254,4 @@ elif operation == "Top/Bottom N Rows":
         st.dataframe(df.nlargest(N,col))
     else:
         st.dataframe(df.nsmallest(N,col))
+
