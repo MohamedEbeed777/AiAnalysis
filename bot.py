@@ -5,6 +5,18 @@ import numpy as np
 st.title("Synthra Ai 📊 Advanced Excel Data Processor (Python + Pandas + NumPy)")
 facebook_page = "https://www.facebook.com/share/1Bvfup6DWi/"
 
+st.write(
+    f"""
+    <div style="background-color:#28a745; padding:12px; border-radius:10px; text-align:center;">
+        <a href="{facebook_page}" style="color:white; font-size:20px; font-weight:bold;" target="_blank">
+            تواصل معنا على فيسبوك
+        </a>
+    </div>
+    """
+)
+ 
+
+
 st.write(f"[Contact us to join Python & Data Analysis course ]({facebook_page})")
 # ⿡ Upload Excel File
 uploaded_file = st.file_uploader("Upload your Excel file", type=["xlsx"])
@@ -257,17 +269,7 @@ elif operation == "Top/Bottom N Rows":
     else:
         st.dataframe(df.nsmallest(N,col))
 
-st.write(
-    f"""
-    <div style="background-color:#28a745; padding:12px; border-radius:10px; text-align:center;">
-        <a href="{facebook_page}" style="color:white; font-size:20px; font-weight:bold;" target="_blank">
-            تواصل معنا على فيسبوك
-        </a>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
- 
+
 
 
 
