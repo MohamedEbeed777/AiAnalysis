@@ -256,7 +256,19 @@ elif operation == "Top/Bottom N Rows":
         st.dataframe(df.nlargest(N,col))
     else:
         st.dataframe(df.nsmallest(N,col))
+
+st.markdown(
+    f"""
+    <div style="background-color:#28a745; padding:12px; border-radius:10px; text-align:center;">
+        <a href="{facebook_page}" style="color:white; font-size:20px; font-weight:bold;" target="_blank">
+            تواصل معنا على فيسبوك
+        </a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
  
+
 
 
 
