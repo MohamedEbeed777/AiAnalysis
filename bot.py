@@ -3,8 +3,8 @@ import pandas as pd
 import numpy as np
 
 st.title("Synthra Ai 📊 Advanced Excel Data Processor (Python + Pandas + NumPy)")
-whatsapp_number = "‪+201062350195‬"
-st.write(f"[Contact us to join Python & Data Analysis course ](https://wa.me/{whatsapp_number.replace('+','')})", unsafe_allow_html=True)
+whatsapp_number = "‪201062350195‬"
+st.write(f"[Contact us to join Python & Data Analysis course ](https://wa.me/{whatsapp_number})", unsafe_allow_html=True)
 # ⿡ Upload Excel File
 uploaded_file = st.file_uploader("Upload your Excel file", type=["xlsx"])
 if uploaded_file:
@@ -256,5 +256,6 @@ elif operation == "Top/Bottom N Rows":
     else:
         st.dataframe(df.nsmallest(N,col))
  
+
 
 
